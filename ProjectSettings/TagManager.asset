@@ -50,6 +50,9 @@ TagManager:
   - name: Traps
     uniqueID: 1674373439
     locked: 0
+  - name: Decor
+    uniqueID: 3654604335
+    locked: 0
   - name: Ground
     uniqueID: 2087064631
     locked: 0

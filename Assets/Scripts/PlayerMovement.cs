@@ -37,6 +37,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float knockbackProtectionTime;
     bool isKnocked;
 
+    [Header("Audio info")]
+    [SerializeField] AudioClip jumpSFX;
+
 
     void Start()
     {
@@ -116,6 +119,7 @@ public class PlayerMovement : MonoBehaviour
     void Jump()
     {
         myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpForce);
+        GetComponent<AudioSource>().PlayOneShot(jumpSFX);
     }
 
     void JumpActions()

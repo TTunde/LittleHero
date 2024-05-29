@@ -74,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -640362961
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -440036431, guid: d5cf635055d4bd44e8182229faad5ce3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d438d28b35e0f3b4c9ca223dbd5137e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinPickupSFX: {fileID: 8300000, guid: be602b14656d9704995febdc1226276e, type: 3}
+  coinPickupSFX: {fileID: 8300000, guid: b77359bc2afc49141a8ea9d931ced6bd, type: 3}
 --- !u!58 &7936894086460397617
 CircleCollider2D:
   m_ObjectHideFlags: 0
