@@ -1,18 +1,51 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
-public class TrapFire : MonoBehaviour
+public class TrapFire : TrapController
 {
-    // Start is called before the first frame update
-    void Start()
+    public bool isWorking;
+    Animator myAnimator;
+    TrapController trap;
+
+    public float repeatRate;
+    private void Start()
     {
-        
+        trap = GetComponent<TrapController>();
+        myAnimator = GetComponent<Animator>();
+        if (transform.parent == null)
+        {
+            InvokeRepeating("FireSwitch", 0, repeatRate);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        myAnimator.SetBool("isWorking", isWorking);
+        if (isWorking)
+        {
+            GetComponent<AudioSource>().PlayOneShot(trap.audioSFX);
+        }
+
+
     }
+    public void FireSwitch()
+    {
+        isWorking = !isWorking;
+
+    }
+
+    public void FireSwitchAfter(float seconds)
+    {
+        CancelInvoke();
+        isWorking = false;
+        Invoke("FireSwitch", seconds);
+    }
+    protected override void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (isWorking)
+        {
+            base.OnTriggerEnter2D(collision);
+        }
+    }
+
+
 }

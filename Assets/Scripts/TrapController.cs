@@ -1,8 +1,11 @@
 using UnityEngine;
 
+
 public class TrapController : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    [Header("Audio info")]
+    [SerializeField] public AudioClip audioSFX;
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.GetComponent<PlayerMovement>() != null)
         {
