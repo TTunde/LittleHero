@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Vector3 enemyCheckPosition;
 
     [Header("Wall check and slide")]
+    [SerializeField] LayerMask whatIsWall;
     [SerializeField] float wallCheckDistance;
     bool isWallDetected;
     bool canWallSlide;
@@ -190,7 +191,7 @@ public class PlayerMovement : MonoBehaviour
     private void CollisionCheck()
     {
         isGroundDetected = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
-        isWallDetected = Physics2D.Raycast(transform.position, Vector2.right * facingDirection, wallCheckDistance, whatIsGround);
+        isWallDetected = Physics2D.Raycast(transform.position, Vector2.right * facingDirection, wallCheckDistance, whatIsWall);
 
         if (isWallDetected && myRigidBody.velocity.y < 0)
             canWallSlide = true;

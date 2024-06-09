@@ -207,16 +207,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
-  jumpForce: 7
-  doubleJumpForce: 2
-  groundCheckRadius: 0.15
+  jumpForce: 6.5
+  doubleJumpForce: 4
+  groundCheckRadius: 0.12
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 1088
   groundCheck: {fileID: 7043083194363482025}
   enemyCheck: {fileID: 3315710623538111760}
   enemyCheckRadius: 0.18
   enemyCheckPosition: {x: 2, y: 2, z: 0}
+  whatIsWall:
+    serializedVersion: 2
+    m_Bits: 64
   wallCheckDistance: 0.35
   wallJumpDirection: {x: 2, y: 2}
   knockbackDirection: {x: 2, y: 2}

@@ -38,9 +38,9 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.GetComponent<PlayerMovement>() != null)
+        PlayerMovement player = collision.collider.GetComponent<PlayerMovement>();
+        if (player != null)
         {
-            PlayerMovement player = collision.collider.GetComponent<PlayerMovement>();//ezt nem igazán értem miért
 
             if (player.transform.position.x > transform.position.x)
                 player.Knockback(1);
