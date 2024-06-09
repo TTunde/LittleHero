@@ -23,9 +23,8 @@ public class TrapFire : TrapController
         {
             GetComponent<AudioSource>().PlayOneShot(trap.audioSFX);
         }
-
-
     }
+
     public void FireSwitch()
     {
         isWorking = !isWorking;
@@ -38,14 +37,12 @@ public class TrapFire : TrapController
         isWorking = false;
         Invoke("FireSwitch", seconds);
     }
+
     protected override void OnTriggerEnter2D(Collider2D collision)
     {
-
         if (isWorking)
         {
             base.OnTriggerEnter2D(collision);
         }
     }
-
-
 }

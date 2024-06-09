@@ -8,6 +8,4 @@ public class CoinController : MonoBehaviour
         AudioSource.PlayClipAtPoint(coinPickupSFX, Camera.main.transform.position);
         Destroy(gameObject);
     }
-
-
 }

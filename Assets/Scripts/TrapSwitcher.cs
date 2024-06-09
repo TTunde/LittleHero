@@ -7,8 +7,6 @@ public class TrapSwitcher : MonoBehaviour
     [Header("Audio info")]
     [SerializeField] AudioClip audioSFX;
 
-
-
     private void Start()
     {
         myAnimator = GetComponent<Animator>();

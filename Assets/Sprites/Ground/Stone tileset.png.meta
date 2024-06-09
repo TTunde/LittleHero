@@ -260,8 +260,8 @@ TextureImporter:
       name: Stone tileset_7
       rect:
         serializedVersion: 2
-        x: 0
-        y: 160
+        x: 160
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -281,8 +281,8 @@ TextureImporter:
       name: Stone tileset_8
       rect:
         serializedVersion: 2
-        x: 32
-        y: 160
+        x: 192
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -302,8 +302,8 @@ TextureImporter:
       name: Stone tileset_9
       rect:
         serializedVersion: 2
-        x: 64
-        y: 160
+        x: 224
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -323,7 +323,7 @@ TextureImporter:
       name: Stone tileset_10
       rect:
         serializedVersion: 2
-        x: 96
+        x: 0
         y: 160
         width: 32
         height: 32
@@ -344,7 +344,7 @@ TextureImporter:
       name: Stone tileset_11
       rect:
         serializedVersion: 2
-        x: 128
+        x: 32
         y: 160
         width: 32
         height: 32
@@ -365,8 +365,8 @@ TextureImporter:
       name: Stone tileset_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
+        x: 64
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -386,8 +386,8 @@ TextureImporter:
       name: Stone tileset_13
       rect:
         serializedVersion: 2
-        x: 32
-        y: 128
+        x: 96
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -407,8 +407,8 @@ TextureImporter:
       name: Stone tileset_14
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
+        x: 128
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -428,8 +428,8 @@ TextureImporter:
       name: Stone tileset_15
       rect:
         serializedVersion: 2
-        x: 96
-        y: 128
+        x: 160
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -449,8 +449,8 @@ TextureImporter:
       name: Stone tileset_16
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
+        x: 192
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -470,8 +470,8 @@ TextureImporter:
       name: Stone tileset_17
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
+        x: 224
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -491,8 +491,8 @@ TextureImporter:
       name: Stone tileset_18
       rect:
         serializedVersion: 2
-        x: 128
-        y: 96
+        x: 0
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -513,7 +513,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 64
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -533,8 +533,8 @@ TextureImporter:
       name: Stone tileset_20
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
+        x: 64
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -554,8 +554,8 @@ TextureImporter:
       name: Stone tileset_21
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
+        x: 96
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -575,8 +575,8 @@ TextureImporter:
       name: Stone tileset_22
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
+        x: 128
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -596,8 +596,8 @@ TextureImporter:
       name: Stone tileset_23
       rect:
         serializedVersion: 2
-        x: 96
-        y: 32
+        x: 160
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -617,8 +617,8 @@ TextureImporter:
       name: Stone tileset_24
       rect:
         serializedVersion: 2
-        x: 128
-        y: 32
+        x: 192
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -630,6 +630,321 @@ TextureImporter:
       bones: []
       spriteID: 03af5e8d3866e0e49924347bd55f8298
       internalID: -872344149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone tileset_25
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a36f0855b2a3e4da89a000f760bfb5
+      internalID: 1326453244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone tileset_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704f0244d8e50904ba88030d8d6b3fd2
+      internalID: 603775529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone tileset_27
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f581760418644d04e8dfbddddd1a2cb1
+      internalID: 2025000713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone tileset_28
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d869fd0a702fb4180fdff0f06cb2f5
+      internalID: -815509704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone tileset_29
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e9af36fbe140954b846723a5e0c532e
+      internalID: 1983183803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone tileset_30
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78899a58049c70f45aac734fb63af8f7
+      internalID: -549181607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone tileset_31
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13482f1789fcc724bb9da1e9c9f2d153
+      internalID: 789075662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone tileset_32
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31baad34cf4beb94bac14a0a7322b0ed
+      internalID: 365669603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone tileset_33
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b8a1ad3ca170d4186d828f197a5b45
+      internalID: -2006540476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone tileset_34
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9bfa0bbc87f124295a82f6da59fbd6
+      internalID: 540501155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone tileset_35
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a91b379d99343704fa59a30936be5f3f
+      internalID: 1329224451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone tileset_36
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091d8647a2aab694183f4c245970a04e
+      internalID: 1545853442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone tileset_37
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965098ed547752c43bd84ba1bbc517f7
+      internalID: 2105780924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone tileset_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f08bb6d4ddebd48b8c6ff3de9bda08
+      internalID: -1940401286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone tileset_39
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171e53dbee7ba5a4e9ecc100b678640a
+      internalID: -714057346
       vertices: []
       indices: 
       edges: []
@@ -663,7 +978,22 @@ TextureImporter:
       Stone tileset_22: 1559036726
       Stone tileset_23: 315720032
       Stone tileset_24: -872344149
+      Stone tileset_25: 1326453244
+      Stone tileset_26: 603775529
+      Stone tileset_27: 2025000713
+      Stone tileset_28: -815509704
+      Stone tileset_29: 1983183803
       Stone tileset_3: 763161410
+      Stone tileset_30: -549181607
+      Stone tileset_31: 789075662
+      Stone tileset_32: 365669603
+      Stone tileset_33: -2006540476
+      Stone tileset_34: 540501155
+      Stone tileset_35: 1329224451
+      Stone tileset_36: 1545853442
+      Stone tileset_37: 2105780924
+      Stone tileset_38: -1940401286
+      Stone tileset_39: -714057346
       Stone tileset_4: -1688870711
       Stone tileset_5: -419320399
       Stone tileset_6: -1012482129

@@ -8,7 +8,9 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Movement")]
     [SerializeField] float moveSpeed = 3f;
-    [SerializeField] float jumpForce = 2f;
+    [SerializeField] float jumpForce = 6.5f;
+    [SerializeField] float doubleJumpForce = 2f;
+    float defaultJumpForce;
     bool isMoving;
     float xInput;
     bool isFacingRight = true;
@@ -20,6 +22,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] LayerMask whatIsGround;
     [SerializeField] Transform groundCheck;
     bool isGroundDetected;
+    [SerializeField] Transform enemyCheck;
+    [SerializeField] float enemyCheckRadius;
+    [SerializeField] Vector3 enemyCheckPosition;
 
     [Header("Wall check and slide")]
     [SerializeField] float wallCheckDistance;
@@ -45,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
     {
         myRigidBody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
+        defaultJumpForce = jumpForce;
     }
     void Update()
     {
@@ -66,8 +72,25 @@ public class PlayerMovement : MonoBehaviour
             myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, myRigidBody.velocity.y * 0.1f);
         }
         Move();
+        EnemyCheck();
     }
 
+    private void EnemyCheck()
+    {
+        Collider2D[] hitedColliders = Physics2D.OverlapCircleAll(enemyCheck.position, enemyCheckRadius);
+        //Collider2D[] hitedColliders = Physics2D.OverlapBoxAll(enemyCheck.position, enemyCheckPosition, 2);
+        foreach (var enemyCollider in hitedColliders)
+        {
+            if (enemyCollider.GetComponent<Enemy>() != null)
+            {
+                if (myRigidBody.velocity.y < 0)
+                {
+                    enemyCollider.GetComponent<Enemy>().Damage();
+                    Jump();
+                }
+            }
+        }
+    }
 
     void WallJump()
     {
@@ -127,6 +150,7 @@ public class PlayerMovement : MonoBehaviour
         if (isWallSliding && !isGroundDetected)
         {
             WallJump();
+            canDoubleJump = true;
         }
         else if (isGroundDetected)
         {
@@ -134,8 +158,11 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (canDoubleJump)
         {
+            canMove = true;
+            jumpForce = doubleJumpForce;
             canDoubleJump = false;
             Jump();
+            jumpForce = defaultJumpForce;
         }
         canWallSlide = false;
     }
@@ -173,12 +200,13 @@ public class PlayerMovement : MonoBehaviour
             isWallSliding = false;
             canWallSlide = false;
         }
-
     }
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(groundCheck.transform.position, groundCheckRadius);
         Gizmos.DrawLine(transform.position, new Vector3(transform.position.x + wallCheckDistance * facingDirection, transform.position.y));
+        Gizmos.DrawWireSphere(enemyCheck.position, enemyCheckRadius);
+        //Gizmos.DrawCube(enemyCheck.position, enemyCheckPosition);
     }
 }
 
