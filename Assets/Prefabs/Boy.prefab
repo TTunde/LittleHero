@@ -225,7 +225,7 @@ MonoBehaviour:
   knockbackDirection: {x: 2, y: 2}
   knockbackTime: 0.5
   knockbackProtectionTime: 1
-  jumpSFX: {fileID: 8300000, guid: 3048f1f3d209af14bb94e72ddacbe832, type: 3}
+  jumpSFX: {fileID: 0}
 --- !u!95 &8448260625566054350
 Animator:
   serializedVersion: 5
@@ -259,7 +259,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.058
   m_Pitch: 1
   Loop: 0
   Mute: 0
